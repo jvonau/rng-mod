@@ -1,0 +1,14 @@
+● rng-tools.service
+   Loaded: loaded (/etc/init.d/rng-tools; enabled-runtime; vendor preset: enabled)
+   Active: active (running) since Tue 2021-03-23 02:58:37 GMT; 26min ago
+     Docs: man:systemd-sysv-generator(8)
+  Process: 366 ExecStart=/etc/init.d/rng-tools start (code=exited, status=0/SUCCESS)
+    Tasks: 4 (limit: 4915)
+   CGroup: /system.slice/rng-tools.service
+           └─377 /usr/sbin/rngd -r /dev/hwrng
+
+Mar 23 02:58:37 raspberrypi systemd[1]: Starting rng-tools.service...
+Mar 23 02:58:37 raspberrypi rngd[377]: rngd 2-unofficial-mt.14 starting up...
+Mar 23 02:58:37 raspberrypi rng-tools[366]: Starting Hardware RNG entropy gatherer daemon: rngd.
+Mar 23 02:58:37 raspberrypi rngd[377]: entropy feed to the kernel ready
+Mar 23 02:58:37 raspberrypi systemd[1]: Started rng-tools.service.
