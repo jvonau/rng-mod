@@ -1,5 +1,5 @@
 # rng-mod
-systemd unit file for running early in boot process
+systemd unit file for running rng-tools'rngd early in boot process
 
 edit /etc/init.d/rng-tools changing PIDFILE=/run/rngd.pid
 
